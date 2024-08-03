@@ -1,0 +1,7 @@
+## Interface: 110000, 110002, 40400, 11503
+## Title: Baganator (NDui Skin)
+## Version: @project-version@
+## Author: plusmouse
+## RequiredDeps: Baganator, NDui
+
+Main.lua
