@@ -2,6 +2,6 @@
 ## Title: Baganator (NDui Skin)
 ## Version: @project-version@
 ## Author: plusmouse
-## RequiredDeps: Baganator, NDui
+## RequiredDeps: Baganator
 
 Main.lua

@@ -1,4 +1,4 @@
-local B, C, L, DB = unpack(NDui)
+local B, C, L, DB
 
 local function ConvertTags(tags)
   local res = {}
@@ -104,8 +104,11 @@ local function SkinFrame(details)
   end
 end
 
-Baganator.API.Skins.RegisterListener(SkinFrame)
+EventUtil.ContinueAfterAllEvents(function()
+  B, C, L, DB = unpack(NDui)
+  Baganator.API.Skins.RegisterListener(SkinFrame)
 
-for _, details in ipairs(Baganator.API.Skins.GetAllFrames()) do
-  SkinFrame(details)
-end
+  for _, details in ipairs(Baganator.API.Skins.GetAllFrames()) do
+    SkinFrame(details)
+  end
+end, "PLAYER_LOGIN")
